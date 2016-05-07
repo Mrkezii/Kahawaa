@@ -392,14 +392,14 @@ body {
     transform: translateX(-50%) translateY(-50%);
     color: white;
     font-size: 20px;
-    font-size: 1.25rem;
+    font-size: 2.25rem;
     font-weight: 300;
     text-align: center;
 }
 @media only screen and (min-width: 768px) {
     .cd-intro h1 {
         font-size: 30px;
-        font-size: 1.875rem;
+        font-size: 3rem;
     }
 }
 @media only screen and (min-width: 1170px) {
