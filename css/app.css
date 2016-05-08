@@ -9,8 +9,66 @@ First Section
     /* background-size: contain; */
     position: relative;
     /* left: 43%; */
-    top: 23%;
+    top: 15%;
     width: 17em;
     margin: 0 auto;
 }
-@media screen only and (max-width)
+.row {
+    max-width: 100%;
+}
+.x {
+    padding-left: 0;
+    padding-right: 0;
+    color: white;
+    font-style: italic;
+}
+.x:hover {
+    color: black;
+}
+img {
+    width: 100%;
+    height: 16em;
+}
+.p_time {
+    height: 8em;
+    padding-top: 10%;
+    background-color: #f15b29;
+    color: white;
+    font-style: normal;
+}
+.h_hour {
+    height: 8em;
+    padding-top: 10%;
+    color: black;
+    font-style: normal;
+}
+.h_hour:hover,
+.p_time:hover {
+    opacity: 0.5;
+}
+.h_hour p,
+.p_time p {
+    margin-bottom: 0;
+    text-align: center;
+    font-size: 1.8em;
+}
+.x img:hover {
+    opacity: 0.5;
+}
+.cc {
+    position: relative;
+    height: 150px;
+    width: 150px;
+}
+.cc .tz {
+    position: absolute;
+    top: 0;
+    height: 50%;
+    width: 100%;
+}
+.cc .tbx {
+    position: absolute;
+    top: 50%;
+    height: 50%;
+    width: 100%;
+}
