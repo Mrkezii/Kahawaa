@@ -23,7 +23,7 @@ First Section
 }
 .ss {
     height: 6em;
-    background-color: white;
+    background-color: #F7F4F4;
 }
 .thumbnail {
     border: 0;
@@ -66,4 +66,57 @@ First Section
     font-size: 1.5em;
     text-align: center;
     padding-top: 30px;
+}
+.pp {
+    background-color: #F15A29;
+}
+.hh:hover {
+    opacity: 0.5;
+}
+
+/* --------------------------------
+
+fast food and drinks Section
+
+-------------------------------- */
+
+.img_txt {
+    margin: 5% 10%;
+}
+.fast_food,
+.drinks {
+    /*    border: 1px solid black;*/
+    padding: 2%;
+    box-shadow: 0px 0px 5px #888888;
+}
+.er {
+    display: inline-block;
+    float: left;
+}
+.imgContainer {
+    float: left;
+}
+.button {
+    display: inline-block;
+    padding: 1em;
+    background-color: #79BD9A;
+    text-decoration: none;
+    color: white;
+}
+.button:hover {
+    background-color: #79BD9A;
+}
+.asa {
+    text-align: left;
+    width: 55%;
+    margin: .4em;
+    padding: .7em;
+    cursor: pointer;
+    background: transparent;
+    border: 1px solid #F15A29;
+    text-decoration: none;
+    color: #666;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
 }
