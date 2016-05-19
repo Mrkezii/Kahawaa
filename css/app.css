@@ -108,7 +108,7 @@ fast food and drinks Section
 }
 .asa {
     text-align: left;
-    width: 55%;
+    width: 180px;
     margin: .4em;
     padding: .7em;
     cursor: pointer;
@@ -118,5 +118,9 @@ fast food and drinks Section
     color: #666;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
-
+#container {
+    margin: 20px;
+    width: 200px;
+    height: 200px;
+    position: relative;
 }
