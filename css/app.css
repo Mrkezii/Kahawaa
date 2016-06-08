@@ -1,5 +1,25 @@
 /* --------------------------------
 
+GENERAL
+
+-------------------------------- */
+.img_txt,
+.page_margin{
+    width: 80%;
+    max-width: 1200px;
+    margin: 5% auto;
+}
+li{
+    list-style-type: none;
+}
+ul{
+    margin-left: 0;
+    margin-bottom: 0;
+}
+
+
+/* --------------------------------
+
 First Section
 
 -------------------------------- */
@@ -80,9 +100,7 @@ fast food and drinks Section
 
 -------------------------------- */
 
-.img_txt {
-    margin: 5% 10%;
-}
+
 .fast_food,
 .drinks {
     /*    border: 1px solid black;*/
@@ -118,54 +136,76 @@ fast food and drinks Section
     color: #666;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
+
 /*   */
-ul.tab {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    border: 1px solid #ccc;
-    background-color: #f1f1f1;
+.tabs{
+    position: relative;
+    top: 37%;
+/*    align-content: center;*/
+/*    justify-content: center;*/
 }
-
-/* Float the list items side by side */
-ul.tab li {float: left;}
-
-/* Style the links inside the list items */
-ul.tab li a {
+.tabs_bg {
+    height: auto;
+    padding: 5% 0;
+    background-image: url(../assets/backgrounds/foodsBg.jpg);
+}
+.tabs-nav li {
+/*    float: left;*/
+    width: 25%;
     display: inline-block;
+}
+.tabs-nav li:first-child a {
+    border-right: 0;
+    border-top-left-radius: 6px;
+}
+.tabs-nav li:last-child a {
+    border-top-right-radius: 6px;
+}
+a {
+    background: #eaeaed;
+    border: 1px solid #cecfd5;
     color: black;
+    display: block;
+    font-weight: 600;
+    padding: 10px 0;
     text-align: center;
-    padding: 14px 16px;
     text-decoration: none;
-    transition: 0.3s;
-    font-size: 17px;
 }
-
-/* Change background color of links on hover */
-ul.tab li a:hover {
-    background-color: #ddd;
+a:hover {
+    color:  #F15A29;
 }
-
-/* Create an active/current tablink class */
-ul.tab li a:focus, .active {
-    background-color: #ccc;
+.tab-active a {
+    background: #fff;
+    border-bottom-color: transparent;
+    color:  #F15A29;
+    cursor: default;
 }
-
-/* Style the tab content */
-.tabcontent {
+.tabs-stage {
+    border: 1px solid #cecfd5;
+    border-radius: 0 0 6px 6px;
+    border-top: 0;
+    clear: both;
+    padding: 24px 30px;
+    position: relative;
+    top: -1px;
+}
+.mob{
     display: none;
-    padding: 6px 12px;
-    -webkit-animation: fadeEffect 1s;
-    animation: fadeEffect 1s;
 }
+/* --------------------------------
 
-@-webkit-keyframes fadeEffect {
-    from {opacity: 0;}
-    to {opacity: 1;}
+MEDIA QUERIES
+
+-------------------------------- */
+@media only screen and (max-width: 430px){
+    .tabs-nav li {
+    width: 100%;
+    display:block;
 }
-
-@keyframes fadeEffect {
-    from {opacity: 0;}
-    to {opacity: 1;}
+    .mob{
+        display: block;
+    }
+    .desk{
+        display: none;
+    }
 }

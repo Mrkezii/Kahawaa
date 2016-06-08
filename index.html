@@ -77,7 +77,7 @@
                 <div style="border-bottom: 1px solid grey" class="ss hh">
                     <p>Happy Hour</p>
                 </div>
-                <div style="margin-bottom:1rem;" class="ss pp">
+                <div class="ss pp">
                     <p>Party Time</p>
                 </div>
             </div>
@@ -131,27 +131,35 @@
         </div>
     </section>
 
-    <section>
-        <h3>Fade in Tabs</h3>
-        <ul class="tab">
-            <li><a class="tablinks" onclick="openCity(event, 'London')">London</a></li>
-            <li><a class="tablinks" onclick="openCity(event, 'Paris')">Paris</a></li>
-            <li><a class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</a></li>
-        </ul>
+    <section class="tabs_bg">
+        <div class="tabs page_margin">
+            <ul class="tabs-nav desk">
+                <li><a href="#tab-1">Fast Food</a></li><li>
+                <a href="#tab-2">Drinks</a></li><li>
+                <a href="#tab-3">Chicken</a></li><li>
+                <a href="#tab-3">Rice</a></li>
+            </ul>
 
-        <div id="London" class="tabcontent">
-            <h3>London</h3>
-            <p>London is the capital city of England.</p>
-        </div>
-
-        <div id="Paris" class="tabcontent">
-            <h3>Paris</h3>
-            <p>Paris is the capital of France.</p>
-        </div>
-
-        <div id="Tokyo" class="tabcontent">
-            <h3>Tokyo</h3>
-            <p>Tokyo is the capital of Japan.</p>
+            <div class="tabs-stage">
+                <div id="tab-1">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec neque nisi, dictum aliquet lectus.</p>
+                </div>
+                <div id="tab-2">
+                    <p>Phasellus pharetra aliquet viverra. Donec scelerisque tincidunt diam, eu fringilla urna auctor at.</p>
+                </div>
+                <div id="tab-3">
+                    <p>Phasellus pharetra aliquet viverra. Donec scelerisque tincidunt diam, eu fringilla urna auctor at.</p>
+                </div>
+                <div id="tab-4">
+                    <p>Phasellus pharetra aliquet viverra. Donec scelerisque tincidunt diam, eu fringilla urna auctor at.</p>
+                </div>
+            </div>
+             <ul class="tabs-nav mob">
+                <li><a href="#tab-1">Fast Food</a></li><li>
+                <a href="#tab-2">Drinks</a></li><li>
+                <a href="#tab-3">Chicken</a></li><li>
+                <a href="#tab-3">Rice</a></li>
+            </ul>
         </div>
 
     </section>
@@ -166,19 +174,19 @@
     <script src="js/progressbar.js"></script>
     <script src="js/app.js"></script>
     <script>
-        function openCity(evt, cityName) {
-            var i, tabcontent, tablinks;
-            tabcontent = document.getElementsByClassName("tabcontent");
-            for (i = 0; i < tabcontent.length; i++) {
-                tabcontent[i].style.display = "none";
-            }
-            tablinks = document.getElementsByClassName("tablinks");
-            for (i = 0; i < tablinks.length; i++) {
-                tablinks[i].className = tablinks[i].className.replace(" active", "");
-            }
-            document.getElementById(cityName).style.display = "block";
-            evt.currentTarget.className += " active";
-        }
+        // Show the first tab by default
+        $('.tabs-stage div').hide();
+        $('.tabs-stage div:first').show();
+        $('.tabs-nav li:first').addClass('tab-active');
+
+        // Change tab class and display content
+        $('.tabs-nav a').on('click', function(event) {
+            event.preventDefault();
+            $('.tabs-nav li').removeClass('tab-active');
+            $(this).parent().addClass('tab-active');
+            $('.tabs-stage div').hide();
+            $($(this).attr('href')).show();
+        });
 
     </script>
 </body>
