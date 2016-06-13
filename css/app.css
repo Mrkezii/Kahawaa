@@ -1,0 +1,204 @@
+/* --------------------------------
+
+GENERAL
+
+-------------------------------- */
+.img_txt,
+.page_margin {
+  width: 80%;
+  max-width: 1200px;
+  margin: 5% auto; }
+
+li {
+  list-style-type: none; }
+
+ul {
+  margin-left: 0;
+  margin-bottom: 0; }
+
+/* --------------------------------
+
+First Section
+
+-------------------------------- */
+.hero-logo {
+  height: auto;
+  /* background-size: contain; */
+  position: relative;
+  /* left: 43%; */
+  top: 15%;
+  width: 17em;
+  margin: 0 auto; }
+
+.row {
+  max-width: 100%; }
+
+.row,
+.column,
+.columns {
+  padding: 0; }
+
+.ss {
+  height: 6em;
+  background-color: #F7F4F4; }
+
+.thumbnail {
+  border: 0; }
+
+.column {
+  height: 12em; }
+
+.column:hover {
+  opacity: 0.5; }
+
+.daya {
+  background-image: url(../assets/foodtop/breakfast.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat; }
+
+.biu {
+  background-image: url(../assets/foodtop/lunch.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat; }
+
+.uku {
+  background-image: url(../assets/foodtop/dinner.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat; }
+
+.ss:hover {
+  /*    opacity: 0.5;*/
+  background-color: #F15A29;
+  color: white; }
+
+.daya p,
+.biu p,
+.uku p {
+  color: white;
+  position: relative;
+  top: 45%;
+  text-align: center; }
+
+.ss p {
+  font-size: 1.5em;
+  text-align: center;
+  padding-top: 30px; }
+
+.pp {
+  background-color: #F15A29; }
+
+.hh:hover {
+  opacity: 0.5; }
+
+/* --------------------------------
+
+fast food and drinks Section
+
+-------------------------------- */
+.fast_food,
+.drinks {
+  /*    border: 1px solid black;*/
+  padding: 2%;
+  box-shadow: 0px 0px 5px #888888; }
+
+.er {
+  display: inline-block;
+  float: left; }
+
+.imgContainer {
+  float: left; }
+
+.button {
+  display: inline-block;
+  padding: 1em;
+  background-color: #79BD9A;
+  text-decoration: none;
+  color: white; }
+
+.button:hover {
+  background-color: #79BD9A; }
+
+.asa {
+  text-align: left;
+  width: 180px;
+  margin: .4em;
+  padding: .7em;
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid #F15A29;
+  text-decoration: none;
+  color: #666;
+  -webkit-tap-highlight-color: transparent; }
+
+/*  TAB SECTION */
+.tabs {
+  position: relative;
+  top: 37%;
+  /*    align-content: center;*/
+  /*    justify-content: center;*/ }
+
+.tabs_bg {
+  height: auto;
+  padding: 5% 0;
+  background-image: url(../assets/backgrounds/foodsBg.jpg); }
+
+.tabs-nav li {
+  /*    float: left;*/
+  width: 25%;
+  display: inline-block; }
+
+.tabs-nav li:first-child a {
+  border-right: 0;
+  border-top-left-radius: 6px; }
+
+.tabs-nav li:last-child a {
+  border-top-right-radius: 6px; }
+
+.tabs_bg a {
+  background: #eaeaed;
+  border: 1px solid #cecfd5;
+  color: black;
+  display: block;
+  font-weight: 600;
+  padding: 10px 0;
+  text-align: center;
+  text-decoration: none; }
+
+a:hover {
+  color: #F15A29; }
+
+.tab-active a {
+  background: #fff;
+  border-bottom-color: transparent;
+  color: #F15A29;
+  cursor: default; }
+
+.tabs-stage {
+  border: 1px solid #cecfd5;
+  border-radius: 0 0 6px 6px;
+  border-top: 0;
+  clear: both;
+  padding: 24px 30px;
+  position: relative;
+  top: -1px; }
+
+.mob {
+  display: none; }
+
+/* --------------------------------
+
+MEDIA QUERIES
+
+-------------------------------- */
+@media only screen and (max-width: 430px) {
+  .tabs-nav li {
+    width: 100%;
+    display: block; }
+
+  .mob {
+    display: block; }
+
+  .desk {
+    display: none; } }
+
+/*# sourceMappingURL=app.css.map */

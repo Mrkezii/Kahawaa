@@ -161,7 +161,8 @@ fast food and drinks Section
 .tabs-nav li:last-child a {
     border-top-right-radius: 6px;
 }
-a {
+.tabs_bg{
+    a {
     background: #eaeaed;
     border: 1px solid #cecfd5;
     color: black;
@@ -170,6 +171,7 @@ a {
     padding: 10px 0;
     text-align: center;
     text-decoration: none;
+    }
 }
 a:hover {
     color:  #F15A29;
