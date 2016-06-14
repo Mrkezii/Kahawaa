@@ -97,7 +97,7 @@ fast food and drinks Section
 -------------------------------- */
 .fast_food,
 .drinks {
-  /*    border: 1px solid black;*/
+  max-width: 538px;
   padding: 2%;
   box-shadow: 0px 0px 5px #888888; }
 

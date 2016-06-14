@@ -103,7 +103,7 @@ fast food and drinks Section
 
 .fast_food,
 .drinks {
-    /*    border: 1px solid black;*/
+    max-width: 538px;
     padding: 2%;
     box-shadow: 0px 0px 5px #888888;
 }
@@ -149,17 +149,21 @@ fast food and drinks Section
     padding: 5% 0;
     background-image: url(../assets/backgrounds/foodsBg.jpg);
 }
-.tabs-nav li {
+.tabs-nav{
+    li {
 /*    float: left;*/
     width: 25%;
     display: inline-block;
+    }
 }
 .tabs-nav li:first-child a {
     border-right: 0;
     border-top-left-radius: 6px;
 }
-.tabs-nav li:last-child a {
+.tabs-nav {
+    li:last-child a {
     border-top-right-radius: 6px;
+    }
 }
 .tabs_bg{
     a {
@@ -176,11 +180,13 @@ fast food and drinks Section
 a:hover {
     color:  #F15A29;
 }
-.tab-active a {
+.tab-active {
+    a {
     background: #fff;
     border-bottom-color: transparent;
     color:  #F15A29;
     cursor: default;
+    }
 }
 .tabs-stage {
     border: 1px solid #cecfd5;
